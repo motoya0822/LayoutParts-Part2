@@ -1,1 +1,32 @@
 @charset "UTF-8";
+
+.hukidasi {
+  width: 500px;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  background: #fad296;
+  border: solid 5px #8f5a0a;
+  border-radius: 30px;/*角丸*/
+  position: relative;/*起点*/
+  margin: 0 auto;
+}
+
+.hukidasi:before {/*要素の直前に内容を挿入する*/
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;/*transparent透明*/
+  left: 40px;
+  border-top: 20px solid #8f5a0a;
+  bottom: -45px;
+}
+
+.hukidasi:after{/*要素の直後に内容を挿入する*/
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  left: 40px;/*三角の位置*/
+  border-top: 20px solid #fad296;
+  bottom: -40px;/*差が外枠の大きさ*/
+}
+

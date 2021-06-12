@@ -1,1 +1,109 @@
 @charset "UTF-8";
+
+.flex--center {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: 0 15px;
+  line-height: 50px;/*高さ*/
+  cursor: pointer;/*要素の上にいるときに表示されるマウスカーソル*/
+  margin-left: 30px;
+  border-radius: 10px;/*角丸*/
+}
+
+.button:first-child {
+  margin-left: 0;
+}
+
+.button--red {
+  color: #fff;/*文字色*/
+  background: #fd0f0fd9;/*ボタンの色*/
+}
+
+.button--blue {
+  color: #fff;
+  background: #170ffdd9;
+}
+
+.button--green {
+  color: #000;
+  background: #0ffd0fd9;
+}
+
+.shadow--red {
+  color: #fff;
+  background: #fd0f0fd9;
+  box-shadow: 0 5px 0 rgba(63, 5, 5, 0.851);/*影について*/
+}
+
+.shadow--blue {
+  color: #fff;
+  background: #170ffdd9;
+  box-shadow: 0 5px 0 rgba(5, 13, 63, 0.851);
+}
+
+.shadow--green {
+  color: #000;
+  background: #0ffd0fd9;
+  box-shadow: 0 5px 0 rgba(5, 63, 5, 0.851);
+}
+
+.active--red {
+  color: #fff;
+  background: #fd0f0fd9;
+  box-shadow: 0 5px 0 rgba(63, 5, 5, 0.851);
+}
+
+.active--blue {
+  color: #fff;
+  background: #170ffdd9;
+  box-shadow: 0 5px 0 rgba(5, 13, 63, 0.851);
+}
+
+.active--green {
+  color: #000;
+  background: #0ffd0fd9;
+  box-shadow: 0 5px 0 rgba(5, 63, 5, 0.851);
+}
+
+.active--red:active,.active--blue:active,.active--green:active {
+  transform: translateY(4px);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  border-bottom: none;/*ボーダーは表示されず、太さも0に*/
+}
+
+.Q4-1--button {
+  color: #67c5ff;
+  border: 4px double #67c5ff;/*二重線*/
+  transition: .5s;
+}
+
+.Q4-1--button:hover {
+  background: #fffbef;
+}
+
+.Q4-2--button {
+  color: #67c5ff;
+  border: 4px dotted #75caff;/*点線*/
+  transition: .5s;
+}
+
+.Q4-2--button:hover {
+  border-style: dashed;/*破線*/
+}
+
+.Q4-3--button {
+  color: #0079a5f8;
+  background: #d0edfff8;
+  border: 4px dashed #67c5ff;
+  transition: .5s;
+}
+
+.Q4-3--button:hover {
+  color: #67c5ff;
+  background: #ffffff;
+}

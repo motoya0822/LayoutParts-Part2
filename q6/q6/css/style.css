@@ -1,1 +1,40 @@
 @charset "UTF-8";
+a {
+  text-decoration:none;
+}
+
+.header {
+  width: 100%;
+  background: #388bff;
+  position: fixed;
+}
+
+.blue {
+  width: 1100px;/*横幅*/
+  margin: 0 auto;/*左右中央寄せ*/
+}
+
+.SHOP {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: bold;/*フォントの太さ*/
+}
+
+.SHOP a {
+  color: #f2ff7b;
+}
+
+.d--flex {
+  display: flex;
+  justify-content: space-between;
+  /*配置コンテナーの中で主軸方向に均等に配置*/
+}
+
+.nav li {
+  list-style: none;
+  padding: 30px;
+}
+
+li a {
+  color: #ffffff;
+}
