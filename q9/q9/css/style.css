@@ -106,6 +106,8 @@
   padding: 20px;
   background: #ffffff;
   border: 1px solid #000000;
+  border-left: 0;
+  transition: .5s;
 }
 
 .card--item > p {
